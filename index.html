@@ -37,11 +37,12 @@
     }
 
     header img {
-      width: 120px;
-      height: 120px;
+      width: 480px;
+      height: 270px;
       border-radius: 20px;
       box-shadow: 0 0 20px #8000ff;
       animation: float 5s ease-in-out infinite;
+      object-fit: cover;
     }
 
     @keyframes float {
@@ -65,7 +66,7 @@
 
     .btn {
       display: inline-block;
-      margin-top: 25px;
+      margin: 10px;
       padding: 12px 25px;
       background: #6d00b8;
       color: white;
@@ -165,15 +166,19 @@
 <body>
 
   <header>
-    <img src="https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Moon-Convert/moonconvert.png" alt="Moon Convert Icon">
+    <img src="https://github.com/CatThatDrinksSprite/Moon-Convert/raw/main/Moon-Convert/moonconvert.png" alt="Moon Convert Banner">
     <h1>Moon Convert</h1>
     <p>An open-source script for just a baseplate/green baseplate/spooky fencing, that has Require scripts turned into FE Scripts. We also have some of our own scripts!</p>
-    <a href="https://discord.gg/DPBtncwaEm" class="btn" target="_blank">Join Discord</a>
+    <div>
+      <a href="https://discord.gg/DPBtncwaEm" class="btn" target="_blank">Join Discord</a>
+      <a href="https://raw.githubusercontent.com/CatThatDrinksSprite/Moon-Convert/refs/heads/main/Scripts/Main/Moon%20Convert.lua" class="btn" target="_blank">View Script Source</a>
+      <a href="https://github.com/CatThatDrinksSprite/Moon-Convert?tab=readme-ov-file" class="btn" target="_blank">View Repository</a>
+    </div>
   </header>
 
   <section id="script">
     <h2>Moon Convert Script</h2>
-    <pre><code id="luaCode">loadstring(game:HttpGet("https://raw.githubusercontent.com/CatThatDrinksSprite/https://raw.githubusercontent.com/CatThatDrinksSprite/Moon-Convert/refs/heads/main/Scripts/Main/Moon%20Convert.luaMoon-Convert/refs/heads/main/Scripts/Main/Moon%20Convert.lua",true))()</code></pre>
+    <pre><code id="luaCode">loadstring(game:HttpGet("https://raw.githubusercontent.com/CatThatDrinksSprite/Moon-Convert/refs/heads/main/Scripts/Main/Moon%20Convert.lua",true))()</code></pre>
     <button class="copy-btn" onclick="copyCode()">Copy Script</button>
   </section>
 
@@ -184,7 +189,6 @@
     <p><b>Whoever made the original FD/Require scripts</b></p>
     <p><b>MyWorld</b> — made the reanimate</p>
     <p><b>Poog</b> — made the website</p>
-
   </div>
 
   <footer>
@@ -212,4 +216,3 @@
 
 </body>
 </html>
-
